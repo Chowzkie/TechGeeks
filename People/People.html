@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our People</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <div class="logo">
+            <img src="../Pictures/Logo picture/TechGeeks_Logo.png" alt="TechGeeks Logo">
+            <span><h4>TechGeeks</h4></span>    
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+    
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="../Index.html">Home</a></li>
+                <li><a href="People.html" class = "people">People</a></li>
+                <li><a href="../Contact/Contact.html">Contact Us</a></li>
+                <li><a href="../About Us/AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <label for="category"></label>
+        <select id="category" onchange="filterProfiles()">
+            <option value="">Select Category</option>
+            <option value="software-engineer">Software Engineer</option>
+            <option value="cloud-analyst">Cloud Analyst</option>
+            <option value="network-engineer">Network Engineer</option>
+            <option value="data-scientist">Data Scientist</option>
+            <option value="web-developer">Web Developer</option>
+            <option value="cybersecurity-engineer">Cybersecurity Engineer</option>
+        </select>
+
+        <h1>Our People</h1>
+
+        <section class="profile-section">
+            <section class="profile" data-category="software-engineer">
+                    <a href="../People Profile/Profile-Dominic Duay.html">
+                    <img src="../Pictures/CirclePic/Dominic Duay.jpg" alt="Dominic Duay">
+                    <h2>Dominic Duay</h2>
+                    <p>Software Engineer</p>
+                    </a>
+            </section>
+
+            <section class="profile" data-category="cloud-analyst">
+                    <a href="../People Profile/Profile-AnneM.html">
+                    <img src="../Pictures/CirclePic/Anne Millers.jpg" alt="Anne Millers">
+                    <h2>Anne Millers</h2>
+                    <p>Cloud Analyst</p>
+                    </a>
+            </section>
+
+            <section class="profile" data-category="network-engineer">
+                    <a href="../People Profile/Profile-LebroJ.html">
+                    <img src="../Pictures/CirclePic/Lebron James.jpg" alt="Lebron James">
+                    <h2>Lebron James</h2>
+                    <p>Network Engineer</p>
+                    </a>
+            </section>
+
+            <section class="profile" data-category="data-scientist">
+                    <a href="../People Profile/Profile-BillG.html">
+                    <img src="../Pictures/CirclePic/Bill Gates.jpg" alt="Bill Gates">
+                    <h2>Bill Gates</h2>
+                    <p>Data Scientist</p>
+                    </a>
+            </section>
+
+            <section class="profile" data-category="web-developer">
+                    <a href="../People Profile/Profile-JeffB.html">
+                    <img src="../Pictures/CirclePic/Jeff Bezos.jpg" alt="Jeff Bezos">
+                    <h2>Jeff Bezos</h2>
+                    <p>Web Developer</p>
+                    </a>
+            </section>
+
+            <section class="profile" data-category="cybersecurity-engineer">
+                    <a href="../People Profile/Profile-JackD.html">
+                    <img src="../Pictures/CirclePic/Jack Dorsey.jpg" alt="Jack Dorsey">
+                    <h2>Jack Dorsey</h2>
+                    <p>Cybersecurity Engineer</p>
+                    </a>
+            </section>
+            
+            <!-- This is a profile section for a Software Engineer, initially hidden from view (display: none).
+            The 'data-category' attribute allows this profile to be shown when the user select 'Web Developer'
+            from the category dropdown. -->
+            <section class="profile" data-category="software-engineer" style="display: none;">
+                <a href="../People Profile/Profile-AnnaS.html">
+                <img src="../Pictures/CirclePic/Anna Smith.jpg" alt="Anna Smith">
+                <h2>Anna Smith</h2>
+                <p>Software Engineer</p>
+                </a>
+            </section>
+
+            <section class="profile" data-category="software-engineer" style="display: none;">
+                <a href="profile8.html">
+                <img src="../Pictures/CirclePic/John Doe.jpg" alt="John Doe">
+                <h2>John Doe</h2>
+                <p>Software Engineer</p>
+                </a>
+            </section>
+
+            <section class="profile" data-category="cloud-analyst" style="display: none;">
+                <a href="../People Profile/Profile-TomR.html">
+                <img src="../Pictures/CirclePic/Tom Riddle.jpg" alt="Tom Riddle">
+                <h2>Tom Riddle</h2>
+                <p>Cloud Analyst</p>
+                </a>
+            </section>
+
+            <section class="profile" data-category="cloud-analyst" style="display: none;">
+                <a href="..profile13.html">
+                <img src="../Pictures/CirclePic/Ella Green.jpg" alt="Ella Green">
+                <h2>Ella Green</h2>
+                <p>Cloud Analyst</p>
+                </a>
+            </section>
+
+            <section class="profile" data-category="network-engineer" style="display: none;">
+                <a href="..profile17.html">
+                <img src="../Pictures/CirclePic/Jessica Zhang.jpg" alt="Jessica Zhang">
+                <h2>Jessica Zhang</h2>
+                <p>Network Engineer</p>
+                </a>
+            </section>
+
+            <section class="profile" data-category="network-engineer" style="display: none;">
+                <a href="profile18.html">
+                <img src="../Pictures/CirclePic/Micheal Harris.jpg" alt="Michael Harris">
+                <h2>Michael Harris</h2>
+                <p>Network Engineer</p>
+                </a>
+            </section>
+
+            <section class="profile" data-category="data-scientist" style="display: none;">
+                <a href="profile22.html">
+                <img src="../Pictures/CirclePic/Ellon Musk.jpg" alt="Elon Musk">
+                <h2>Elon Musk</h2>
+                <p>Data Scientist</p>
+                </a>
+            </section>
+
+            <section class="profile" data-category="data-scientist" style="display: none;">
+                <a href="profile23.html">
+                <img src="../Pictures/CirclePic/Isla Peterson.jpg" alt="Isla Peterson">
+                <h2>Isla Peterson</h2>
+                <p>Data Scientist</p>
+                </a>
+            </section>
+
+            <section class="profile" data-category="web-developer" style="display: none;">
+                <a href="profile27.html">
+                <img src="../Pictures/CirclePic/Mark Zuckerberg.jpg" alt="Mark Zuckerberg">
+                <h2>Mark Zuckerberg</h2>
+                <p>Web Developer</p>
+                </a>
+            </section>
+
+            <section class="profile" data-category="web-developer" style="display: none;">
+                <a href="profile28.html">
+                <img src="../Pictures/CirclePic/Sarah Lee.jpg" alt="Sarah Lee">
+                <h2>Sarah Lee</h2>
+                <p>Web Developer</p>
+                </a>
+            </section>
+
+            <section class="profile" data-category="cybersecurity-engineer" style="display: none;">
+                <a href="profile32.html">
+                <img src="../Pictures/CirclePic/Sundar Pichai.jpg" alt="Sundar Pichai">
+                <h2>Sundar Pichai</h2>
+                <p>Cybersecurity Engineer</p>
+                </a>
+            </section>
+
+            <section class="profile" data-category="cybersecurity-engineer" style="display: none;">
+                <a href="profile33.html">
+                <img src="../Pictures/CirclePic/Joshua Davis.jpg" alt="Joshua Davis">
+                <h2>Joshua Davis</h2>
+                <p>Cybersecurity Engineer</p>
+                </a>
+            </section>
+        </section>
+    </section>
+
+        <footer>
+            <div class="footerContainer">
+                <div class="footerContent">
+                    <h3>Company</h3>
+                    <p style="color: rgb(54, 101, 255);"><b>Sutherland</b></p>
+                    <p>San Isidro, Tarlac City</p>
+                    <p>Tarlac Philippines</p>
+                </div> 
+
+                <div class="footerContent">
+                    <h3>Quick Links</h3>
+                        <ul class="list">
+                            <li><a href="../Index.html">Home</a></li>
+                            <li><a href="People.html" class="people">People</a></li>
+                            <li><a href="../About Us/AboutUs.html">AboutUs</a></li>
+                            <li><a href="../Contact/Contact.html">ContactUs</a></li>
+                        </ul>
+                </div>
+
+                <div class="footerContent">
+                    <h3>Follow Us</h3>
+                        <ul class="socialIcons">
+                            <li><a href=""><img src="../Pictures/Social Icons/Twitter.png" alt="Twitter"></a></li>
+                            <li><a href=""><img src="../Pictures/Social Icons/Facebook.png" alt="Facebook"></a></li>
+                            <li><a href=""><img src="../Pictures/Social Icons/Instagram.png" alt="Instagram"></a></li>
+                            <li><a href=""><img src="../Pictures/Social Icons/YouTube.png" alt="YouTube"></a></li>
+                        </ul>
+                </div>
+            </div>
+
+                <div class="bottomBar">
+                    <p>&copy; 2024 TechGeeks . All rights reserved</p>
+                </div>
+        </footer>
+            <script src="People.js"></script>
+</body>
+</html>

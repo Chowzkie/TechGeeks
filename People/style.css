@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+body {
+    height: 100vh; /* Full viewport height */
+    overflow: scroll; /* Scrollbar visible */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 1px;
+}
+
+/* Navigation Styles */
+
+header {
+    position: fixed; /* Fix the header to the top */
+    top: 0;
+    left: 0;
+    z-index: 2; /* Ensure header stays above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px; /* Set the height of the header */
+    padding: 0 20px;
+    background-color: #FBFBFB; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect beneath the header */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Flexbox layout for the nav items */
+    gap: 2.5rem; /* Space between each navigation item */
+    margin: 0;
+    padding: 0 20px;
+}
+
+/* Style each navigation link */
+nav ul li a {
+    color: #000; /* Black text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    transition: color 0.2s ease; /* Smooth color transition */
+}
+
+/* Change link color on hover */
+nav ul li a:hover {
+    color: #5EF2CE; /* Light green color on hover */
+}
+
+/* Style the logo container */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the logo image */
+.logo img {
+    width: 55px; /* Set the size of the logo image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style the logo text (optional) */
+.logo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000; /* Color of the logo text */
+    margin-left: 1px; /* Add space between the logo and text */
+}
+.people{
+    color: #5EF2CE;
+}
+/* Hamburger menu for mobile */
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+section {
+    padding: 20px;
+    margin: 100px auto; /* Center the section and add margin from the top */
+    max-width: 1200px;
+    text-align: center;
+    position: relative;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    width: 200px;
+    margin: 20px auto;
+    display: block;
+    background-color: #fff;
+    color: #000;
+    transition: none;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Add margin to separate from other content */
+}
+
+/* Profile section layout */
+.profile-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 15px 10px; /* Gap between the grid items */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Profile card styles */
+.profile {
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+/* Link inside the profile card */
+.profile a {
+    text-decoration: none;
+    color: inherit; /* Inherit the text color */
+}
+
+/* Profile image styles */
+.profile img {
+    width: 100%;
+    max-width: 220px; /* Maximum image width */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 10px;
+}
+
+/* Profile title (name) */
+.profile h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Space below the name */
+}
+
+/* Profile description (bio or other info) */
+.profile p {
+    font-size: 14px;
+    color: #888888; /* Light gray color for text */
+}
+
+/* Hover effect for profile card */
+.profile:hover {
+    transform: scale(1.05); /* Slightly enlarge the profile card on hover */
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #f4f4f4;
+    padding-top: 5px;
+}
+
+.footerContainer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footerContent {
+    width: 33.3%; /* Three equal columns */
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.footerContent p {
+    font-size: 14px;
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+}
+
+.footerContent ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.list {
+    padding: 0;
+}
+
+.list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    position: relative;
+}
+
+/* Style the underline effect for the list items */
+.list li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #50DDE1; /* Color of the underline */
+    transition-duration: .5s; /* Smooth animation */
+}
+
+.list li:hover::before {
+    width: 70px; /* Expand the underline on hover */
+}
+
+.socialIcons {
+    text-align: center;
+    padding: 0;
+}
+
+.socialIcons li {
+    display: inline-block;
+    text-align: center;
+    padding: 3px;
+}
+
+.socialIcons i {
+    color: white;
+    font-size: 25px;
+}
+
+.list li a {
+    color: #2F2F2F;
+    text-decoration: none;
+}
+
+.list a:hover {
+    color: #50DDE1; /* Change color on hover */
+}
+
+.bottomBar {
+    background: #ddd;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+
+.bottomBar p {
+    color: #343434;
+    margin: 0;
+    font-size: 10px;
+    padding: 7px;
+}
+
+/* Responsive Styles */
+
+/* For small devices */
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Hide the nav by default */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #FBFBFB;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: block; /* Show the nav when active */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        gap: 1.5rem;
+        padding: 20px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger icon */
+    }
+
+    /* Footer Responsiveness */
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile:hover {
+        transform: none; /* Disable hover effect on small screens */
+    }
+}
+
+/* For larger screens */
+@media (min-width: 1025px) {
+    select {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        margin: 0;
+        width: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav ul {
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        justify-content: space-evenly;
+        gap: 0.5rem;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+
+    .logo img {
+        width: 40px; /* Smaller logo for mobile */
+    }
+
+    .logo span {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+}

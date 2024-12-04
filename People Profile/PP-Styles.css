@@ -1,0 +1,644 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting font size for the entire document */
+html{
+    font-size: 16px;
+}
+
+/* Setting font format for the body */
+body{
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+
+}
+
+/* Adding space between header and main to avoid collision */
+main{
+    margin-top: 60px;
+}
+
+/* Style for the header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #FBFBFB;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+
+}
+
+/* Style the navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem; 
+    margin: 0;
+    padding: 0 20px;
+}
+
+/* Style for each link */
+nav ul li a {
+    color: #000;
+    text-decoration: none; 
+    font-weight: bold;
+    transition: color 0.2s ease; 
+}
+
+
+.nav-link:hover {
+    color: #5EF2CE; 
+}
+
+/* Style for the logo container */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the logo image */
+.logo img {
+    width: 55px; 
+    height: auto; 
+}
+
+/* Style for the logo text */
+.logo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000; 
+    margin-left: 1px; 
+}
+.people{
+    color: #5EF2CE;
+}
+#pp{
+    color: #5EF2CE;
+}
+/* Style for the hambuger menu icon (currently hidden at bigger screens) */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Main Container that holds  the button and profile contents */
+.MainCont{
+    width: 100%;
+    height: 700px;
+    flex-shrink: 0;
+    background: linear-gradient(179deg, rgba(72, 207, 237, 0.70) 1.26%, rgba(99, 249, 200, 0.70) 98.91%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    
+}
+
+/* Styles for button */
+.BackButton{
+    width: 120px;
+    height: 40px;
+
+    border-radius: 7px;
+    background: linear-gradient(0deg, #FFF 0%, #FFF 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 20px;
+    left: 50px;
+
+    cursor: pointer; /* Change cursor to pointer */
+    transition: all 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.BackButton img{
+    width: 20px;
+}
+
+.BackButton a{
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+
+    color: #2f2f2f;
+    text-decoration: none;
+}
+
+/* Hover effect for button */
+.BackButton:hover{
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Styles for the profile contents */
+.ProfileCont{
+    width: 1100px;
+    height: 500px;
+    flex-shrink: 0;
+
+    border-radius: 40px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+}
+
+.PersonProfile{
+    width: 400px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Picture{
+    width: 300px;
+    height: auto;
+    padding: 5px;
+}
+
+.Name h2{
+    margin-top: 10px;
+    color: #2f2f2f;
+}
+
+.Title p{
+    color: #2f2f2f;
+}
+
+.PersonInfos{
+    width: 700px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.PersonBackground{
+    width: 90%;
+    height: 280px;
+    padding: 20px;
+    display: flex;
+
+    border: 1px solid #5dfad7; 
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.Exper-Expe{
+    width: 50%;
+}
+
+.ExperTitle1 h3{
+    margin-bottom: 15px;
+    margin-left: 45px;
+    text-align: left;
+    color: #2f2f2f;
+}
+
+.ExperTitle2 h3{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 45px;
+    text-align: left;
+    color: #2f2f2f;
+}
+
+.ExpList1{
+    margin-left: 70px;
+    color: #2f2f2f;
+}
+
+.ExpList2{
+    margin-left: 70px;
+    color: #2f2f2f;
+}
+
+.PastEngagements{
+    width: 50%;
+}
+
+.PastTitle h3{
+    margin-left: 30px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #2f2f2f;
+}
+
+.PastList{
+    margin-left: 60px;
+    color: #2f2f2f;
+}
+
+.ContactInfos{
+    width: 90%;
+    height: 120px;
+    margin-top: 30px;
+    
+    border: 1px solid #5dfad7; 
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.ContactTitle h3{
+    margin-left: 35px;
+    margin-top: 10px;
+    text-align: left;
+    color: #2f2f2f;
+}
+
+.EmailCont{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.EmailCont img{
+    width: 25px;
+    height: 20px;
+    margin-left: 40px;
+}
+
+.EmailCont a{
+    margin-left: 10px;
+    color: #2f2f2f;
+    transition: all 0.2s ease;
+}
+
+.EmailCont a:hover{
+    color: #5dfad7;
+    transform: scale(1.05);
+}
+
+.PhoneCont{
+    display: flex;
+}
+
+.PhoneCont img{
+    width: 25px;
+    height: 20px;
+    margin-left: 40px;
+}
+
+.PhoneCont p{
+    color: #2f2f2f;
+    margin-left: 10px;
+}
+
+.Copy-text{
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.Copy-text:hover{
+    color: #5dfad7;
+    transform: scale(1.05);
+}
+
+
+/* Styles fot the footer */
+footer{
+    background-color: #f4f4f4;
+    padding-top: 5px;
+
+}
+.footerContainer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footerContent{
+    width:33.3%;
+}
+h3{
+    font-size: 18px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+.footerContent p{
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+    font-size: 14px;
+}
+.footerContent ul{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.list{
+    padding: 0px;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #50DDE1;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.list li a{
+    color: #2F2F2F;
+    text-decoration: none;
+}
+.socialIcons {
+    text-align: center;
+    padding: 0px;
+}
+.socialIcons li{
+    display: inline-block;
+    text-align: center;
+    padding: 3px;
+}
+.socialIcons i{
+    color: white;
+    font-size: 25px;
+}
+.list a{
+    text-decoration: none;
+}
+
+.socialIcons a{
+    text-decoration: none;
+}
+.socialIcons a:hover{
+    color: #50DDE1;
+}
+.socialIcons i:hover{
+    color: #50DDE1;
+}
+.bottomBar{
+    background: #ddd;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+.bottomBar p{
+    color: #343434;
+    margin: 0;
+    font-size: 10px;
+    padding: 7px;
+}
+
+/* Reponsiveness for mobile display below 500px width */
+
+@media (max-width: 500px) {
+
+    .MainCont{
+        width: 100%;
+        height: 940px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;   
+    }
+
+    .BackButton{
+        width: 120px;
+        height: 40px;
+        border-radius: 0;
+        border-bottom-right-radius: 100px;
+
+        top: 0px;
+        left: 0px;
+    }
+
+    .ProfileCont{
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .PersonProfile{
+        width: 100%;
+        height: auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border-bottom: 2px solid #bebebe;
+        border-bottom-style: dotted;
+
+    }
+
+    .Picture{
+        width: 150px;
+        height: auto;
+        padding: 0;
+        margin-top: 20px;
+        border-radius: 10%;
+    }
+
+    .Name h2{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .Title p{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    
+    .PersonInfos{
+        width: 100%;
+        height: 100%;
+    }
+
+    .PersonBackground{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+        margin-top: 20px;
+        border: none;
+
+        flex-direction: column;
+    }
+
+    .Exper-Expe{
+        width: 100%;
+        height: 250px;
+
+   }
+
+    .ExperTitle1 h3{
+        width: 60%;
+        margin-left: 0;
+        padding-left: 15px;
+        color: white;
+        border-bottom-right-radius: 100px;
+        background: linear-gradient(90deg, #7ce7ff 0%, #83ffe0 81%); 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    .ExperTitle1{
+        height: 10px;
+    }
+    
+    .ExperTitle2 h3{
+        width: 60%;
+        margin-left: 0;
+        padding-left: 15px;
+        color: white;
+        border-bottom-right-radius: 100px;
+        background: linear-gradient(90deg, #7ce7ff 0%, #83ffe0 81%); 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .ExperTitle2{
+        height: 10px;
+    }
+    
+    .ExpList1{
+        margin-left: 50px;
+    }
+    
+    .ExpList2{
+        margin-left: 50px;
+    }
+    
+    .LineDesign{
+        display: none;
+    }
+
+    .PastEngagements{
+        width: 100%;
+        height: 100px;
+    }
+    
+    .PastTitle h3{
+        width: 60%;
+        margin-left: 0;
+        padding-left: 15px;
+        color: white;
+        border-bottom-right-radius: 100px;
+        margin-bottom: 15px;
+        background: linear-gradient(90deg, #7ce7ff 0%, #83ffe0 81%);  
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .PastList{
+        margin-left: 50px;
+    }
+    
+    
+    .ContactInfos{
+        width: 100%;
+        height: 120px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+    
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ContactTitle h3{
+        width: 60%;
+        margin-top: 10px;
+        margin-left: 0;
+        padding-left: 15px;
+        color: white;
+        border-bottom-right-radius: 100px;
+        background: linear-gradient(90deg, #7ce7ff 0%, #83ffe0 81%);  
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .EmailCont{
+        margin-top: 15px;
+    }
+    
+    .MainCont h3{
+        font-size: 16px;
+    }
+}
+
+/* Header/Navigation responsiveness */
+@media (max-width:  768px) {
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #FBFBFB;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    nav.active {
+        display: block;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 20px;
+    }
+
+    nav ul li{
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* Footer Responsiveness */
+    .footerContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
